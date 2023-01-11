@@ -25,21 +25,21 @@ function getColor(e) {
 };
 
 function copy(el) {
-   const rim = document.createElement("textarea");
- rim.value = el;
+    const rim = document.createElement("textarea");
+    rim.value = el;
 
- // Append the textarea element to the body
- document.body.appendChild(rim);
+    // Append the textarea element to the body
+    document.body.appendChild(rim);
 
- // Select the text inside the textarea element
- rim.select();
+    // Select the text inside the textarea element
+    rim.select();
 
- // Copy the text to the clipboard
- document.execCommand("copy");
+    // Copy the text to the clipboard
+    document.execCommand("copy");
 
- // Remove the textarea element from the body
- document.body.removeChild(rim);
- alert(`${el} has been copied to clipboard`)
-}
+    // Remove the textarea element from the body
+    document.body.removeChild(rim);
+    alert(`${el} has been copied to clipboard`);
+};
 
 document.getElementById("color-form").addEventListener("submit", getColor);
