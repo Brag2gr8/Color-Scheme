@@ -1,0 +1,57 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Color Scheme</h1>
+            </hr>
+        </header>
+        <nav>
+            <form id="color-form">
+            <input id="color-pick" type="color"/>
+            <select id="scheme">
+                <option value="monochrome">monochrome</option>
+                <option value="monochrome-dark">monochrome-dark</option>
+                <option value="monochrome-light">monochrome-light</option>
+                <option value="analogic">analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">analogic-complement</option>
+                <option value="triad">triad</option>
+                <option value="quad">quad</option>   
+            </select>
+            <button id="btn">Get color scheme</button>
+            </form>
+        </nav>
+        <div id="color-tray">
+            <div class="container">
+            <div class="color" style="background: #000000"></div>
+            <p class="hex">#000000</p>
+            </div>
+            
+            <div class="container">
+            <div class="color" style="background: #1A1919"></div>
+            <p class="hex">#1A1919</p>
+            </div>
+            
+            <div class="container">
+            <div class="color" style="background: #343232"></div>
+            <p class="hex">#343232</p>
+            </div>
+            
+            <div class="container">
+            <div class="color" style="background: #4F4A4A"></div>
+            <p class="hex">#4F4A4A</p>
+            </div>
+            
+            <div class="container">
+            <div class="color" style="background: #6A6262"></div>
+            <p class="hex">#6A6262</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
