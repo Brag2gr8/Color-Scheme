@@ -2,9 +2,7 @@ function getColor(e) {
     e.preventDefault();
     const inputColor = document.getElementById("color-pick").value;
     const schemeEl = document.getElementById("scheme").value;
-    let hex = inputColor.split("");
-    hex.shift();
-    hex = hex.join("");
+    let hex = inputColor.slice(1);
     
     fetch(`https://www.thecolorapi.com/scheme?hex=${hex}&mode=${schemeEl}&count=5`)
         .then(res => res.json())
