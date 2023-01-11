@@ -67,4 +67,5 @@ button {
 .hex {
     color: #000;
     margin: 1em 10%;
+    cursor: pointer;
 }
