@@ -10,10 +10,11 @@ function getColor(e) {
             const returnedData = data.colors;
             const colorArr = [];
             returnedData.map((color) => {
+                const value = color.hex.value 
                 colorArr.push(`
                     <div class="container">
-                    <div class="color" style="background: ${color.hex.value}"></div>
-                    <p class="hex" onclick="copy('${color.hex.value}')" >${color.hex.value}</p>
+                    <div class="color" style="background: ${value}"></div>
+                    <p class="hex" onclick="copy('${value}')" >${value}</p>
                     </div>`)
             });
             document.getElementById("color-tray").innerHTML = colorArr.join("");
